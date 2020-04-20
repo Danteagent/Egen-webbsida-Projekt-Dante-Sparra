@@ -45,15 +45,34 @@ header p{
 }
 
 .button1{
-    top: 50%;
-    margin: 80px;
+    margin-top:400px;
+    margin-right: 80px;
+    margin-left: 80px;
     z-index: 2;
-    background-color: grey;
-    max-height: 150px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.7);
+    max-height: 100px;
     max-width: 150px;
-    min-height: 150px;
+    min-height: 100px;
     min-width: 150px;
     position: relative;
-    border-radius: 50%;
     box-shadow: 1px 1px 10px black;
+    text-align: center;
+    border: ridge;
+}
+
+#omMig{
+
+}
+
+#omMigText{
+    margin: 0;
+    display: inline-block;
+    margin-top: 28px;
+}
+
+#mittArbeteText{
+    margin: 0;
+    display: inline-block;
+    margin-top: 7px;
 }
