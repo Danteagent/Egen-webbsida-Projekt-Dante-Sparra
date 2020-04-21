@@ -34,7 +34,6 @@ header{
 header p{
     color: white;
     margin: 0;
-    padding: 0;
 }
 
 #buttons{
@@ -59,20 +58,28 @@ header p{
     box-shadow: 1px 1px 10px black;
     text-align: center;
     border: ridge;
+    transition: 0.3s;
+    font-size: 1.9em;
 }
 
-#omMig{
-
+.button1:hover{
+    background-color: rgb(128, 128, 128);
+    font-size: 2.2em;
 }
 
 #omMigText{
     margin: 0;
     display: inline-block;
     margin-top: 28px;
+    text-decoration: none;
+    color: white;
+    
 }
 
 #mittArbeteText{
     margin: 0;
     display: inline-block;
     margin-top: 7px;
+    color: white;
+    text-decoration: none;
 }
