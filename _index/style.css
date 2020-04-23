@@ -1,0 +1,89 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-aspect-ratio: 16/9){
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    #myVideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*Bakgrund*/
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Quicksand;
+}
+
+header{
+    color: white;
+    background-color: rgba(138, 138, 138, 0.503);
+    font-size: 60px;
+    border: 1.5px solid;
+
+    width: 33%;
+    min-width: 350px;
+    height: 25%;
+    max-height: 200px;
+    
+    
+    margin: 10% auto;
+    text-align: center;
+}
+
+header > p{
+    margin: 0;
+    line-height: 88px;
+    
+}
+
+
+
+.flex-item:hover{
+    background-color: rgb(128, 128, 128);
+    font-size: 30px;
+}
+
+.flex-container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+
+.flex-item {
+    background: rgba(128, 128, 128, 0.5);
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+    border: 1.5px solid;
+    width: 195px;
+    height: 100px;
+    transition: 0.3s;
+}
+
+.flex-item > p{
+    line-height: 100px;
+    margin: 0;
+}
+  
