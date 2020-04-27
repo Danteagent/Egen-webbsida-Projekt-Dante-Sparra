@@ -1,7 +1,9 @@
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-var element = document.getElementById('text');
-	if (isMobile) {
-		element.innerHTML = "You are using Mobile";
-	} else {
-		element.innerHTML = "You are using Desktop";
-	}
+var width = document.getElementsByTagName('html').offsetWidth;
+var width = box.clientWidth;
+let height = box.clientHeight;
+
+print(width)
+
+if(){
+	
+}

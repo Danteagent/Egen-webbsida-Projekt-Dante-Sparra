@@ -1,62 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 #myVideo {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    height: auto;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  
 }
-
-@media (min-aspect-ratio: 16/9){
-    #myVideo{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    #myVideo{
-        width: auto;
-        height: 100%;
-    }
-}
-
 /*Bakgrund*/
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    
+    font-family: Quicksand;    
+}
 
 body{
     margin: 0;
-    width: 100%;
     height: 100%;
-    font-family: Quicksand;
 }
 
-header{
+#header{
     color: white;
     background-color: rgba(138, 138, 138, 0.503);
-    font-size: 60px;
-    border: 1.5px solid;
-
-    width: 33%;
-    min-width: 350px;
-    height: 25%;
-    max-height: 200px;
+    font-size: 75px;
+    border: 5px double white;
+    font-family: Caveat;
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 25%;
+    max-height: 30%;
     
-    
-    margin: 10% auto;
+    margin: 10% auto 6% auto ;
     text-align: center;
+    position: relative;
 }
 
-header > p{
-    margin: 0;
-    line-height: 88px;
+#header > p{
+    margin: 3.43% 0 0  0;
+    
     
 }
-
-
 
 .flex-item:hover{
     background-color: rgb(128, 128, 128);
-    font-size: 30px;
+    font-size: 28px;
+    border: 2.5px solid;
+    margin: auto 20px;
+    
 }
 
 .flex-container {
@@ -66,7 +61,7 @@ header > p{
     justify-content: space-evenly;
     
     text-align: center;
-    margin: 0 auto;
+    margin: 5% auto;
     padding: 0;
     
 }
@@ -80,10 +75,65 @@ header > p{
     width: 195px;
     height: 100px;
     transition: 0.3s;
+    
 }
 
-.flex-item > p{
-    line-height: 100px;
-    margin: 0;
+.flex-item > a > p{
+    margin-top: 17.6%;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.flex-item > a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
   
+#background-part{
+    background-color: rgba(138, 138, 138, 0.605);
+    width: 100%;
+    height: 100%;
+    min-width: 310px;
+    position: absolute;
+    border-top: 1.5px solid white;
+    overflow: hidden;
+    
+}
+
+p.underline
+{
+    position: relative;
+}
+
+p.underline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-item:hover p.underline:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+@media only screen and (min-width: 500px) {
+    html, body{
+        overflow: hidden;
+    }
+  }
+
+@media only screen and (max-height: 550px) {
+    html, body{
+        overflow: auto;
+    }
+  }
